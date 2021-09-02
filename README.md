@@ -1,6 +1,11 @@
 # Holo2
 Python code to process holographic images and videos
 
+findZ.py loads images from a directory and uses keyboard to adjust reconstruction Z and save reco image with Z value embedded in file name.
+
+holoVideoReco loads an mp4 videos, allows the selection of frame, cropping of frame, adjusting reconstruction Z and save raw and reco images.
+
+================
 Thomas Zimmerman, IBM Research-Almaden
 
 Holgraphic Reconstruction Algorithms by Nick Antipac, UC Berkeley and  Daniel Elnatan, UCSF
