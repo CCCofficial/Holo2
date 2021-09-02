@@ -1,9 +1,22 @@
 # Holo2
 Python code to process holographic images and videos
 
-findZ.py loads images from a directory and uses keyboard to adjust reconstruction Z and save reco image with Z value embedded in file name.
+PROGRAMS
+========
 
-holoVideoReco loads an mp4 videos, allows the selection of frame, cropping of frame, adjusting reconstruction Z and save raw and reco images.
+**findZ.py** loads images from a directory and uses keyboard to adjust reconstruction Z and save reco image with Z value embedded in file name
+
+**holoVideoReco.py** loads an mp4 videos, user selects frame, crops image, adjusts reconstruction Z, and saves raw and reco images
+
+**detect.py** reads a video frame-by-frame, detects objects and saves location, area, and aspect ratio to a file
+
+
+FUNCTIONS
+==========
+
+**keyboard.py** changes variables with keyboard while program is running
+
+**reco.py** performs holographic reconstruction
 
 ================
 
