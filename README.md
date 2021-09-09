@@ -10,6 +10,7 @@ PROGRAMS
 
 **detect.py** reads a video frame-by-frame, detects objects and saves location, area, and aspect ratio to a file
 
+**arrayColorDemonstration.py** examples of how represent and manipulate images as numpy arrays and explore HSV color space
 
 FUNCTIONS
 ==========
