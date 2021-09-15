@@ -12,6 +12,10 @@ PROGRAMS
 
 **arrayColorDemonstration.py** examples of how represent and manipulate images as numpy arrays and explore HSV color space
 
+**examineReco.py** demonstrates how reconstruction works
+
+**phaseAbbScan.py** visualizes the phase abberition calculations over a range of z values, to demonstrate how reconstruction works
+
 FUNCTIONS
 ==========
 
