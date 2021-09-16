@@ -20,6 +20,9 @@ PROGRAMS
 
 **phaseAbbScan.py** visualizes the phase abberition calculations over a range of z values, to demonstrate how reconstruction works
 
+**bouncingSquare.py** demonstrates creating and manipulating image numpy arrays using a bouncing red square as an example
+
+
 FUNCTIONS
 ==========
 
