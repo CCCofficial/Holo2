@@ -11,6 +11,10 @@ V6 2.23.21 image format= did_13_3940.jpg where 13 is image number, Z in um, if z
 Use SPACE BAR to save z in file name.
 Use 'x' to skip file
 Use 'q' to quit
+
+Tom Zimmerman CCC, IBM Research September 16, 2020
+This work is funded by the National Science Foundation (NSF) grant No. DBI-1548297, Center for Cellular Construction.
+Disclaimer:  Any opinions, findings and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
 """
 import numpy as np
 import cv2
