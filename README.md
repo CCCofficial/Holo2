@@ -6,6 +6,10 @@ PROGRAMS
 
 **findZ.py** loads images from a directory and uses keyboard to adjust reconstruction Z and save reco image with Z value embedded in file name
 
+**findZ_histogram** findZ.py program with a histogram plot of pixel intensity for reconstructed image
+
+**findZ_line** findZ.py program with a plot of pixel intensity of the reconstructed image across the middle row 
+
 **holoVideoReco.py** loads an mp4 videos, user selects frame, crops image, adjusts reconstruction Z, and saves raw and reco images
 
 **detect.py** reads a video frame-by-frame, detects objects and saves location, area, and aspect ratio to a file
