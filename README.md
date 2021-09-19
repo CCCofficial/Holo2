@@ -1,5 +1,4 @@
-# Holo2
-Python code to process holographic images and videos
+# Holo2 Python code to process holographic images and videos
 
 PROGRAMS
 ========
