@@ -21,6 +21,9 @@ PROGRAMS
 
 **bouncingSquare.py** demonstrates creating and manipulating image numpy arrays using a bouncing red square as an example
 
+**pyGame_PlayNoteInstrument.py** demonstrates playing notes on different midi instruments in the computer using pygame
+
+
 
 FUNCTIONS
 ==========
