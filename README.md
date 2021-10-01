@@ -29,6 +29,8 @@ PROGRAMS
 
 **testStreamingVideo.py** find out the address of the microscope (as external USB camera) 
 
+**HW6Task3_helper.py** Assigned the IDs of the closest objects in the previous frame to the objects in the current frame (used for tracking)
+
 FUNCTIONS
 ==========
 
