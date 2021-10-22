@@ -33,6 +33,8 @@ PROGRAMS
 
 **detectBlur.py** detect program with blur to try and prevent an object from having multiple bounding boxes
 
+**noteFunctions.py** play notes as a chord, arpeggiated, etc. Requires pyGame midi player.note
+
 FUNCTIONS
 ==========
 
