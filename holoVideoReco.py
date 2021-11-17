@@ -5,6 +5,7 @@ Holgraphic Reconstruction Algorithms by Nick Antipac, UC Berkeley and  Daniel El
 This work is funded by the National Science Foundation (NSF) grant No. DBI-1548297, Center for Cellular Construction.
 Disclaimer:  Any opinions, findings and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation. 
 
+v6 11.17.21 Replaced the working directly with using the explicit path in 'vid=' (line 47)
 V5 9.01.21 Changed call from vc3 to reco (renamed)
 V4 3.01.21 Removed unused buttons, added instructions, uses vc3 support function file
 V3 2.23.21 Changed Z_SCALE to be in units of 10 um 
@@ -41,12 +42,12 @@ import tkinter as tk
 import reco                 # performs reconstruction
 import cv2
 import numpy as np
-from os import getcwd
 
-vid=r'\rawVideo\M6.mp4'     # put your video location here, must be mp4, use ffmpeg to convert microscope .h264 to .mp4
+
+vid=r'\rawVideo\M6.mp4'     # put your video location here, including the full path, must be mp4, use ffmpeg to convert microscope .h264 to .mp4
 imageNamePrefix='M6'        # used when saving images
-rawImageDir=r'\rawImage\\'   # directory where saved images are stored
-recoImageDir=r'\recoImage\\'   # directory where saved images are stored
+rawImageDir=r'\rawImage\\'   # directory where saved images are stored, must be full path to a director called 'rawImage'
+recoImageDir=r'\recoImage\\'   # directory where saved images are stored,  must be full path to a director called 'recoImage'
     
 ###################### INITIALIZE GLOBAL VALUES #############################
 xRez=1920; yRez=1080;   # video resolution
@@ -129,12 +130,12 @@ def savePicture(holoIM,cropIM):
     # save holo image
     print()
     imageName=imageNamePrefix+'_'+str(imageCount)+'_'+str(Z)+'_reco.jpg'
-    cv2.imwrite(cwd+recoImageDir+imageName,holoIM)
+    cv2.imwrite(recoImageDir+imageName,holoIM)
     print ('Saved image',imageName)
     
     # save raw cropped image
     imageName=imageNamePrefix+'_'+str(imageCount)+'_'+str(Z)+'_raw.jpg'
-    cv2.imwrite(cwd+rawImageDir+imageName,cropIM)
+    cv2.imwrite(rawImageDir+imageName,cropIM)
     print ('Saved image',imageName)
     imageCount+=1 # increment for next saved images
     v.set(2)  # set choice to "+1 Frame" so user won't be confused by SavePic being on
@@ -225,13 +226,13 @@ clamp = lambda value, minv, maxv: max(min(value, maxv), minv)
 doc() # print user guide
     
 #test to see if we can open the video, else quit the program
-cwd=getcwd()            # get working directory
 print('Opening video file:',vid)
-cap=reco.openVid(cwd+vid)
+cap=cv2.VidoeCapture(vid)
 goodVideo, frame = cap.read()
 
 if 'mp4' not in vid:    # can only process mp4 videos!
     goodVideo=0
+    print(vid,'Not an mp4 video!')
     
 if goodVideo:
     root = tk.Tk()
