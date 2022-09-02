@@ -227,7 +227,7 @@ doc() # print user guide
     
 #test to see if we can open the video, else quit the program
 print('Opening video file:',vid)
-cap=cv2.VidoeCapture(vid)
+cap=cv2.VideoCapture(vid)
 goodVideo, frame = cap.read()
 
 if 'mp4' not in vid:    # can only process mp4 videos!
