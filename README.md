@@ -1,7 +1,9 @@
-# Holo2 Python code to process holographic images and videos
+# Code to process holographic images and videos
 
 PROGRAMS
 ========
+
+**Detect_MedianThresh_V2.py** setect objects in video and save the dimensions of bounding boxes using background subtraction
 
 **findZ.py** loads images from a directory and uses keyboard to adjust reconstruction Z and save reco image with Z value embedded in file name
 
