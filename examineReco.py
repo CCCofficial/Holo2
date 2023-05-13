@@ -9,7 +9,7 @@ import numpy as np
 import cv2
 
 imageFileName='blep_raw.jpg'
-DELAY=0             # pause display using waitKey
+DELAY=1000          # pause display one second
 z = 820             # height of object above image sensor (in microns)
 dxy   = 1.4e-6      # imager pixel size in meters.
 wvlen = 650.0e-9    # red laser wavelength (meters)
