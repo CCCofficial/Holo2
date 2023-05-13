@@ -3,7 +3,7 @@
 PROGRAMS
 ========
 
-**Detect_MedianThresh_V2.py** setect objects in video and save the dimensions of bounding boxes using background subtraction
+**Detect_MedianThresh.py** setect objects in video and save the dimensions of bounding boxes using background subtraction
 
 **findZ.py** loads images from a directory and uses keyboard to adjust reconstruction Z and save reco image with Z value embedded in file name
 
@@ -15,7 +15,7 @@ PROGRAMS
 
 **detect.py** reads a video frame-by-frame, detects objects and saves location, area, and aspect ratio to a file
 
-**arrayColorDemonstration.py** examples of how represent and manipulate images as numpy arrays and explore HSV color space
+**HSV_colorSpace.py** examples of how represent and manipulate images as numpy arrays and explore HSV color space
 
 **examineReco.py** demonstrates how reconstruction works
 
@@ -23,7 +23,7 @@ PROGRAMS
 
 **bouncingSquare.py** demonstrates creating and manipulating image numpy arrays using a bouncing red square as an example
 
-**pyGame_PlayNoteInstrument.py** demonstrates playing notes on different midi instruments in the computer using pygame
+**playNote.py** demonstrates playing notes on different midi instruments in the computer using pygame
 
 **testTrack.py** functions useful for tracking objects
 
@@ -35,7 +35,9 @@ PROGRAMS
 
 **detectBlur.py** detect program with blur to try and prevent an object from having multiple bounding boxes
 
-**noteFunctions.py** play notes as a chord, arpeggiated, etc. Requires pyGame midi player.note
+**playChords.py** play notes as a chord, arpeggiated, etc. Requires pyGame midi player.note
+
+**USB_CAM.docx** how to convert Raspberry Pi into a USB camera
 
 FUNCTIONS
 ==========
