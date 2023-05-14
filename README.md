@@ -50,8 +50,8 @@ FUNCTIONS
 
 **reco.py** performs holographic reconstruction
 
-ACKNOWLEDGMENT 
-==============
+ACKNOWLEDGMENTS 
+===============
 
 Code written by Thomas G. Zimmerman, IBM Research-Almaden and Center for Cellular Construction, except Holgraphic Reconstruction Algorithms by Nick Antipac, UC Berkeley and  Daniel Elnatan, UCSF.
 This work is funded by the National Science Foundation (NSF) grant No. DBI-1548297, Center for Cellular Construction.
