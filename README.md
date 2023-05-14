@@ -13,6 +13,8 @@ PROGRAMS
 
 **holoVideoReco.py** loads an mp4 videos, user selects frame, crops image, adjusts reconstruction Z, and saves raw and reco images
 
+**focusGabor.py** autofocus program that run a stack of images through a 0 and 90 deg Gabor Filter and select the image with the highest Gabor value (indicating best focus)
+
 **detect.py** reads a video frame-by-frame, detects objects and saves location, area, and aspect ratio to a file
 
 **HSV_colorSpace.py** examples of how represent and manipulate images as numpy arrays and explore HSV color space
@@ -37,6 +39,8 @@ PROGRAMS
 
 **playChords.py** play notes as a chord, arpeggiated, etc. Requires pyGame midi player.note
 
+**renameFiles.py** renames files in a directory with an ascending number
+
 **USB_CAM.docx** how to convert Raspberry Pi into a USB camera
 
 FUNCTIONS
@@ -46,12 +50,10 @@ FUNCTIONS
 
 **reco.py** performs holographic reconstruction
 
-================
+ACKNOWLEDGMENT 
+==============
 
-Thomas Zimmerman, IBM Research-Almaden
-
-Holgraphic Reconstruction Algorithms by Nick Antipac, UC Berkeley and  Daniel Elnatan, UCSF
-
+Code written by Thomas G. Zimmerman, IBM Research-Almaden and Center for Cellular Construction, except Holgraphic Reconstruction Algorithms by Nick Antipac, UC Berkeley and  Daniel Elnatan, UCSF.
 This work is funded by the National Science Foundation (NSF) grant No. DBI-1548297, Center for Cellular Construction.
 Disclaimer:  Any opinions, findings and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation. 
 
