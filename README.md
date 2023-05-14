@@ -13,8 +13,6 @@ PROGRAMS
 
 **holoVideoReco.py** loads an mp4 videos, user selects frame, crops image, adjusts reconstruction Z, and saves raw and reco images
 
-**focusGabor.py** autofocus program that run a stack of images through a 0 and 90 deg Gabor Filter and select the image with the highest Gabor value (indicating best focus)
-
 **detect.py** reads a video frame-by-frame, detects objects and saves location, area, and aspect ratio to a file
 
 **HSV_colorSpace.py** examples of how represent and manipulate images as numpy arrays and explore HSV color space
@@ -25,8 +23,6 @@ PROGRAMS
 
 **bouncingSquare.py** demonstrates creating and manipulating image numpy arrays using a bouncing red square as an example
 
-**playNote.py** demonstrates playing notes on different midi instruments in the computer using pygame
-
 **streamRecoLine.py** interactive holographic reconstruction with Tkinter interface with line contrast display
 
 **testStreamingVideo.py** find out the address of the microscope (as external USB camera) 
@@ -35,18 +31,23 @@ PROGRAMS
 
 **detectBlur.py** detect program with blur to try and prevent an object from having multiple bounding boxes
 
-**playChords.py** play notes as a chord, arpeggiated, etc. Requires pyGame midi player.note
-
-**renameFiles.py** renames files in a directory with an ascending number
-
+DOCUMENTATION
+=============
 **USB_CAM.docx** how to convert Raspberry Pi into a USB camera
 
-FUNCTIONS
-==========
+USEFUL FUNCTIONS
+================
+**renameFiles.py** renames files in a directory with an ascending number
 
 **keyboard.py** changes variables with keyboard while program is running
 
 **reco.py** performs holographic reconstruction
+
+**playChords.py** play notes as a chord, arpeggiated, etc. Requires pyGame midi player.note
+
+**playNote.py** demonstrates playing notes on different midi instruments in the computer using pygame
+
+**focusGabor.py** autofocus program that run a stack of images through a 0 and 90 deg Gabor Filter and select the image with the highest Gabor value (indicating best focus)
 
 ACKNOWLEDGMENTS 
 ===============
