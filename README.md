@@ -27,8 +27,6 @@ PROGRAMS
 
 **playNote.py** demonstrates playing notes on different midi instruments in the computer using pygame
 
-**testTrack.py** functions useful for tracking objects
-
 **streamRecoLine.py** interactive holographic reconstruction with Tkinter interface with line contrast display
 
 **testStreamingVideo.py** find out the address of the microscope (as external USB camera) 
