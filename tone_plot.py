@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Sep  1 17:00:56 2022
+Generates a series of sine waves, plots and sends them out the speaker. The sine waveforms are mathematically created and placed in memory read out at a fixed sample rate.
+You can change the frequency, amplitude and duration. You can also mathematically generate any arbitrary waveform (example square wave), store it in a numpy array (see Line 63). 
+Created 9/1/22
 
 @author: Tom Zimmerman, IBM Research
 based on https://stackoverflow.com/questions/56592522/python-simple-audio-tone-generator
@@ -62,9 +64,9 @@ for f in range(START_FREQ,STOP_FREQ,STEP_FREQ):
     plt.plot(arr[0:PLOT_SAMPLES])
     plt.ylabel('some numbers')
     plt.show()
-    arr2 = numpy.c_[arr,arr]
+    arr2 = numpy.c_[arr,arr] # convert 1D array into transposed 2D array (e.g. shape [44100] into [44100,44100])
     sound = pygame.sndarray.make_sound(arr2)
-    sound.play(fade_ms=fade_in)
+    sound.play(fade_ms=fade_in) # fade in audio signal to reduce "popping" sound when waveform starts
     pygame.time.delay(duration)
     sound.fadeout(fade_out)
     pygame.time.wait(fade_out)
