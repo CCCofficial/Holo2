@@ -49,6 +49,10 @@ USEFUL FUNCTIONS
 
 **focusGabor.py** autofocus program that run a stack of images through a 0 and 90 deg Gabor Filter and select the image with the highest Gabor value (indicating best focus)
 
+**tone_plot.py** generates a series of sine waves, plots and sends them out the speaker.
+
+**bulk_any_to_mp4.py** Convert any video files in a directory into mp4 format.
+
 ACKNOWLEDGMENTS 
 ===============
 
