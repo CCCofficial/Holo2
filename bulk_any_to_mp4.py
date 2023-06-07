@@ -1,6 +1,6 @@
 '''
 Convert all video files in directory to mp4 format. Directory must only contain video files.
-You will have to change the directory location (line 10) and where the ffmpeg.exe is located (line 23)
+You will have to change the directory location (line 11) and where the ffmpeg.exe is located (line 23)
 12.18.19 Thomas Zimmerman, IBM Research-Almaden
 ''
 
