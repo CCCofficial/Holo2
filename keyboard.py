@@ -26,7 +26,7 @@ for i in range(len(keypad)):
 def processKey():
     global keyState,run;
 
-    key=cv2.waitKey(500) # value is delay in milliseconds to slow down video, must be > 0
+    key=cv2.waitKey(10) # value is delay in milliseconds to slow down video, must be > 0
     if key!=-1:
         keyList=[ord('='),ord('-'),ord('+'),ord('_')]
         value=[1,-1,+10,-10]
